@@ -134,6 +134,7 @@ stages:
           # Getting the IP of the deployed service and writing it to a variable for posing comment
           - script: |
               url="$(get.KubectlOutput)"
+              url= url+"?newParameter=1"
               message="Your review app has been deployed"
               if [ ! -z "$url" -a "$url" != "http://:" ] 
               then
