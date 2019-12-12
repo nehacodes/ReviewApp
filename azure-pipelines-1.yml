@@ -133,5 +133,11 @@ stages:
             inputs:
               targetType: inline
               script: |
+                url="$(get.KubectlOutput)"
                 $message="Your review app has been deployed"
                 Write-Host "##vso[task.setvariable variable=GITHUB_COMMENT]$message"
+                if($url)
+                      message="${message} and is available at $url. [Learn More](https://aka.ms/testwithreviewapps) about how to test and provide feedback for the app."
+                      Write-Host "##vso[task.setvariable variable=GITHUB_COMMENT]$message"
+              
+
