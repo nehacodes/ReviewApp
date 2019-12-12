@@ -134,4 +134,4 @@ stages:
               targetType: inline
               script: |
                 $message="Your review app has been deployed"
-                Write-Host"##vso[task.setvariable variable=GITHUB_COMMENT]$message"
+                Write-Host "##vso[task.setvariable variable=GITHUB_COMMENT]$message"
