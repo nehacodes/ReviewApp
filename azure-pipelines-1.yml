@@ -138,6 +138,7 @@ stages:
                 Write-Host "##vso[task.setvariable variable=GITHUB_COMMENT]$message"
                 if($url)
                       {
+                        $url=$url+"?repo=%repo%&pr=%pr%"
                       $message="$message and is available at $url. <br><br> [Learn More](https://aka.ms/testwithreviewapps) about how to test and provide feedback for the app."
                       Write-Host "##vso[task.setvariable variable=GITHUB_COMMENT]$message"
                       }
