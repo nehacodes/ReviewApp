@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 namespace aspnet_core_dotnet_core
 {
     public class Program
-    {
+    {//comment
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
