@@ -133,7 +133,7 @@ stages:
             inputs:
               targetType: inline
               script: |
-                url="$(get.KubectlOutput)"
+                $url="$(get.KubectlOutput)"
                 $message="Your review app has been deployed"
                 Write-Host "##vso[task.setvariable variable=GITHUB_COMMENT]$message"
                 if($url)
