@@ -11,6 +11,7 @@ namespace aspnet_core_dotnet_core
     {
         public static void Main(string[] args)
         {
+            //Comment
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
