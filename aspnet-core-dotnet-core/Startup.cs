@@ -13,7 +13,7 @@ namespace aspnet_core_dotnet_core
     public class Startup
     {
         public Startup(IHostingEnvironment env)
-        {
+        { //comment
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
