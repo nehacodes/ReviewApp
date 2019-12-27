@@ -141,7 +141,7 @@ stages:
                       $url = $url.Replace("'","")+"?review-app&repo=%repo%&pr=%pr%"
                       $message="$message and is available at $url"
                      # $message="$message and is available at $url.<br> Checkout [XT](http://aka.ms/xtinstall) to test and provide feedback of the app.<br> [Learn More](https://aka.ms/testwithreviewapps) about review app."
-                      Write-Host "##vso[task.setvariable variable=GITHUB_COMMENT]$message"
+                      Write-Host "##vso[task.setvariable variable=GITHUB_COMMENT]$url"
                       }
               
 
