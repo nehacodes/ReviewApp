@@ -27,7 +27,7 @@ namespace aspnet_core_dotnet_core.Controllers
 
             return View();
         }
-
+// comment
         public IActionResult Error()
         {
             return View();
