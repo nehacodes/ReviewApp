@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 namespace aspnet_core_dotnet_core
 {
     public class Startup
-    {
+    { //comm
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
