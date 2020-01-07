@@ -10,7 +10,7 @@ namespace aspnet_core_dotnet_core
     public class Program
     {
         public static void Main(string[] args)
-        {
+        { //New comment
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
