@@ -13,7 +13,7 @@ namespace aspnet_core_dotnet_core.Controllers
         {
             return View();
         }
-
+//new copmment
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
